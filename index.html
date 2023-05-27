@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>component Library</title>
-</head>
+    <link href="styles.css" rel="stylesheet" />
+/head>
 <body>
     <h1>Abineshkumar's component Library</h1>
     <P>im learning html from youtube</P>
@@ -24,25 +25,26 @@
     <h2>@containers</h2>
 
     <h3>@fluid container</h3>
-    <div>this is a fluid container and it will go till end of the page</div>
+    <div class="container">this is a fluid container and it will go till end of the page</div>
 
     <h3>@center container</h3>
-    <div>this is centered container and it will go till the specified width</div>
+    <div class="container container-center">this is centered container and it will go till the specified width</div>
     
     <hr >
 
     <h2>@links</h2>
 
-    <a href="/">primary link</a>
-    <a href="/">secondary link</a>
+    <a class="link primary-link" href="/">primary link</a>
+    <a class="link secondary-link" href="/">secondary link</a>
 
     <hr >
 
     <h2>@list</h2>
 
     <h3>unordered list</h3>
+    <p> this list will not have the bullet</p>
 
-    <ul>
+    <ul class="list-non-bullet">
         <li>item one</li>
         <li>item two</li>
         <li>item three</li>
@@ -50,14 +52,14 @@
 
     <h3>unordered inline list</h3>
 
-    <ul>
-        <li>inline item one</li>
-        <li>inline item two</li>
-        <li>inline item three</li>
+    <ul class="non-bullet">
+        <li class="list-item-inline">inline item one</li>
+        <li class="list-item-inline">inline item two</li>
+        <li class="list-item-inline">inline item three</li>
     </ul>
 
     <h3>reverse ordered list</h3>
-    <ol>
+    <ol reversed>
         <li>computer</li>
         <li>mobile</li>
         <li>server</li>
@@ -67,14 +69,14 @@
 
     <h2>@nav</h2>
 
-    <nav>
-        <div>iam brand</div>
-        <ul>
-            <li>
-                <a href="/">home</a>
+    <nav class="navigation container">
+        <div class="nav-brand">iam brand</div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-iteam-inline">
+                <a class="link link-active" href="/">home</a>
             </li>
-            <li>
-                <a href="/">prodect</a>
+            <li class="list-iteam-inline">
+                <a class="link" href="/">prodect</a>
             </li>
             <li>
                 <a href="/">about</a>
